@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SilverTech Oregon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* For a subtle CRT glow effect on text */
+      @keyframes text-flicker {
+        0% { text-shadow: 0 0 2px #e6eaef, 0 0 5px #e6eaef, 0 0 8px #fff; }
+        30% { text-shadow: 0 0 3px #e6eaef, 0 0 6px #e6eaef, 0 0 10px #fff; }
+        60% { text-shadow: 0 0 2px #e6eaef, 0 0 4px #e6eaef; }
+        100% { text-shadow: 0 0 3px #e6eaef, 0 0 5px #e6eaef, 0 0 9px #fff; }
+      }
+      .text-glow {
+        animation: text-flicker 3s infinite alternate;
+      }
+      /* For the blinking cursor */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#0d3c78]">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

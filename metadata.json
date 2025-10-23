@@ -1,0 +1,5 @@
+{
+  "name": "SilverTech Oregon Terminal",
+  "description": "An interactive terminal experience detailing the origin story of SilverTech Oregon, built with React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
