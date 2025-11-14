@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SilverTech Oregon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* For a subtle CRT glow effect on text */
-      @keyframes text-flicker {
-        0% { text-shadow: 0 0 2px #e6eaef, 0 0 5px #e6eaef, 0 0 8px #fff; }
-        30% { text-shadow: 0 0 3px #e6eaef, 0 0 6px #e6eaef, 0 0 10px #fff; }
-        60% { text-shadow: 0 0 2px #e6eaef, 0 0 4px #e6eaef; }
-        100% { text-shadow: 0 0 3px #e6eaef, 0 0 5px #e6eaef, 0 0 9px #fff; }
-      }
-      .text-glow {
-        animation: text-flicker 3s infinite alternate;
-      }
-      /* For the blinking cursor */
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-      .cursor-blink {
-        animation: blink 1s step-end infinite;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@19.2.0/",
-    "react/": "https://aistudiocdn.com/react@19.2.0/"
-  }
-}
-</script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-  <body class="bg-[#0d3c78]">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-  </body>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/classes-events/">Classes & Events</a></li>
+                <li><a href="/one-on-one-tech-help/">One-on-One Tech Help</a></li>
+                <li><a href="/business-workshops/">Business Workshops</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/locations/">Locations</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/faq/">FAQ</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Senior Tech Help in Astoria, Oregon</h1>
+        <section id="what-we-do">
+            <h2>What We Do</h2>
+            <p>SilverTech Oregon provides friendly, patient tech support for seniors. We help with smartphones, computers, tablets, and more.</p>
+        </section>
+        <section id="free-classes">
+            <h2>Free Local Classes</h2>
+            <p>We offer free technology classes at various locations on the North Coast. Check our <a href="/classes-events/">classes and events page</a> for the current schedule.</p>
+        </section>
+        <section id="one-on-one">
+            <h2>One-on-One Tech Help</h2>
+            <p>Need personalized assistance? We provide one-on-one tech help sessions at your home or a convenient location. Learn more about our <a href="/one-on-one-tech-help/">one-on-one tech help</a>.</p>
+        </section>
+        <section id="serving-north-coast">
+            <h2>Serving Astoria & the North Coast</h2>
+            <p>We serve seniors in Astoria, Warrenton, Seaside, and surrounding areas. See our <a href="/locations/">locations page</a> for more details.</p>
+        </section>
+        <section id="why-silvertech">
+            <h2>Why SilverTech Oregon</h2>
+            <p>Our patient, experienced instructors specialize in helping seniors build confidence with technology.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SilverTech Oregon. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
 </html>
